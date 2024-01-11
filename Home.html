@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meow Cafe</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- inline css style only for review section -->
+    <style>
+      .background {
+        padding: 50px;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <!-- first section navbar -->
+      <nav class="navbar">
+        <!-- has two subsection logo and list -->
+        <div class="logo">
+          <!-- when click logo it will direct back to homepage -->
+          <a href="Home.html">
+            <img
+              src="images/catlogo.jpg"
+              alt="catlogo"
+              style="width: 200px; height: auto"
+            />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="category.html">Category</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- second section header -->
+      <div class="home-header">
+        <div class="header-content">
+          <h1><span>Meow</span> Cafe:</h1>
+          <h2>Your Perfect Catfeine Retreat!</h2>
+          <p>
+            Immerse yourself in the world of cats and coffee at Meow Cafe. It's
+            not just coffee; it's a purrfect experience.
+          </p>
+
+          <button class="prev" onclick="prevSlide()">&larr;</button>
+          <button class="next" onclick="nextSlide()">&rarr;</button>
+        </div>
+        <!-- images sliders -->
+        <div class="slider">
+          <div class="slide"><img src="images/cat1.jpg" alt="Image 1" /></div>
+          <div class="slide"><img src="images/cat2.jpg" alt="Image 2" /></div>
+          <div class="slide"><img src="images/cat3.jpg" alt="Image 3" /></div>
+          <div class="slide"><img src="images/cat4.jpg" alt="Image 4" /></div>
+          <div class="slide"><img src="images/cat5.jpg" alt="Image 5" /></div>
+        </div>
+      </div>
+      <!-- third section content -->
+      <div class="content">
+          <h2>Meow Meow.</h2>
+          <p>We serve freshly made coffee and food.</p>
+            <p>Meow Cafe has a variety of delicious breakfast, lunch, snacks, desserts, and beverages in our menu.</p>
+          <h2>Meet Lily, Oyen & Ron</h2>
+          <p>Our adorable 'assistants' are there to provide you with much cuteness and comfort!</p>
+            <p>We serve our customers with purrfect services.</p>
+            <h2>For all the cat lovers:</h2>
+            <p>The feline creatures found in Meow Cafe will be too charming and lovable to resist!</p>
+            <p>So what are you waiting for?</p>
+            <p>Join us for some furry fun with our precious little friends and enjoy our yummy food!!</p>
+      </div>
+
+      <div class="banner">
+        <h1>Cuddle, Sip, and Purrfection:</h1>
+        <h1>Your Ultimate Catfeine Experience!</h1>
+
+        <div class="bannercontent">
+          <div class="home-menu">
+            <img src="images/cafeaulait.png" alt="cafeaulait" />
+          </div>
+          <h3>Signature Cafe au Lait.</h3>
+          <p>
+            Features steamed milk mixed with strong hot coffee. Perfect for fans
+            of milky coffee.
+          </p>
+
+          <div class="home-menu">
+            <img src="images/espresso.png" alt="espresso" />
+          </div>
+          <h3>Espresso</h3>
+          <p>
+            A bold and intense coffee shot with a rich crema. Savor the deep
+            flavors of dark chocolate and roasted nuts in every sip.
+          </p>
+
+          <div class="home-menu">
+            <img src="images/matchalatte.png" alt="matchalatte" />
+          </div>
+          <h3>Matcha Latte</h3>
+          <p>
+            Sip serenity with our Matcha Latte. Smooth, creamy, and perfectly
+            balanced, it's the essence of calm in a cup.
+          </p>
+        </div>
+        <a href="category.html"><button class="link">Check it out!</button></a>
+      </div>
+
+      <div class="background">
+        <!-- second section header -->
+        <div class="container">
+          <div class="header">
+            <h1>Review</h1>
+          </div>
+          <!-- third section content -->
+          <h3>Your Reviews Matters to us ˶^•ﻌ•^˵ ♡</h3>
+
+          <form id="review-form">
+            <input type="text" placeholder="Name" id="rname" />
+            <!-- a div to display error message -->
+            <small id="r1">Error message</small>
+            <br />
+
+            <input type="email" placeholder="Email" id="remail" />
+            <!-- a div to display error message -->
+            <small id="r2">Error message</small>
+            <br />
+
+            <!-- Add a rating field using a select element -->
+            <label for="rating">Rating:</label>
+            <select id="rating">
+              <option value="5">5 stars</option>
+              <option value="4">4 stars</option>
+              <option value="3">3 stars</option>
+              <option value="2">2 stars</option>
+              <option value="1">1 star</option>
+            </select>
+
+            <small id="r3">Error message</small>
+            <br />
+        
+
+            <textarea
+              placeholder="Leave your review here!"
+              id="rtextarea" ols="4" rows="5"></textarea>
+            <!-- a div to display error message -->
+            <small id="r4">Error message</small>
+            <br />
+
+            <!-- Add an input field for image uploads -->
+            <label>Image (optional)</label>
+            <input type="file" accept="image/*" id="image-upload" />
+            <br />
+
+
+            <button class="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Copyright @ 2022 Meow Cafe</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="fvreview.js"></script>
+  </body>
+</html>
