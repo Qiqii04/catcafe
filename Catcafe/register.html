@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meow Cafe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div id="wrapper">
+        <!-- first section navbar -->
+        <nav class="navbar">
+          <!-- has two subsection logo and list -->
+          <div class="logo">
+            <!-- when click logo it will direct back to homepage -->
+            <a href="Home.html">
+              <img
+                src="images/catlogo.jpg"
+                alt="catlogo"
+                style="width: 200px; height: auto"
+              />
+            </a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="category.html">Category</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- second section header -->
+        <div class="container">
+          <div class="header">
+            <h1>Register</h1>
+          </div>
+          <!-- third section content -->
+
+          <form id="register-form">
+            <input type="text" placeholder="Name" id="name"/>
+            <!-- a div to display error message -->
+          <small id="s1">Error message</small>
+            <br />
+
+            <input type="number" placeholder="Phone Number" id="pnumber"/>
+            <!-- a div to display error message -->
+          <small id="s2">Error message</small>
+            <br />
+
+            <input type="email" placeholder="Email" id="email"/>
+            <!-- a div to display error message -->
+            <small id="s3">Error message</small>
+            <br />
+
+            <input type="password" placeholder="Password" id="password"/>
+            <!-- a div to display error message -->
+          <small id="s4">Error message</small>
+            <br />
+
+            <label>Date of Birth</label>
+            <input type="date" id="dob"/>
+            <!-- a div to display error message -->
+          <small id="s5">Error message</small>
+            <br />
+
+            <div class="gender">
+              <label>Gender:</label>
+              <div class="gender-options">
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+                
+              </div>
+              <div class="gender-options">
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+              </div>
+                <small id="s6">Error message</small>
+              </div>
+            <br />
+          
+
+          
+            <a href="login.html">Already a member?</a>
+            <br />
+            <button class="submit" id="button">Sign-up</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Copyright @ 2022 Meow Cafe</p>
+      </div>
+    </div>
+    <!-- add js script here -->
+    <script src="fvregister.js"></script>
+  </body>
+</html>
